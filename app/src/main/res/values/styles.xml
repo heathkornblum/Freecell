@@ -1,0 +1,290 @@
+<!--
+styles.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimaryDark">@color/statusBar</item>
+        <!-- TODO: Themify button styles -->
+    </style>
+
+    <style name="Victory" parent="AppTheme">
+        <item name="android:background">@drawable/theme_button</item>
+    </style>
+
+    <style name="SettingsTheme" parent="AppTheme">
+        <!-- TODO: consider using standard toolbar back button for settings instead of 'back to menu' button -->
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Various color themes are based on AppTheme.NoActionBar -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">?themeColorPrimary</item>
+        <item name="android:textColorPrimary">?themeTextColorPrimary</item>
+        <item name="colorAccent">?themeButtonStroke</item>
+        <item name="colorButtonNormal">?themeButtonSolid</item>
+    </style>
+
+    <style name="ThemeButton" parent="AppTheme.NoActionBar">
+        <item name="android:background">@drawable/theme_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">?themeTextColorPrimary</item>
+    </style>
+
+    <style name="LicoriceTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/black</item>
+        <item name="themeTextColorPrimary">@color/lightGrey</item>
+        <item name="themeColorMenuBar">@color/darkGrey</item>
+        <item name="themeButtonSolid">@color/black</item>
+        <item name="themeButtonStroke">@color/lightGrey</item>
+        <item name="themeContrastText">@color/white</item>
+    </style>
+
+    <style name="DippedConeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/dippedConeMain</item>
+        <item name="themeColorMenuBar">@color/dippedConeMenu</item>
+        <item name="themeButtonSolid">@color/dippedConeSecond</item>
+        <item name="themeButtonStroke">@color/dippedConeThird</item>
+        <item name="themeTextColorPrimary">@color/dippedConeFourth</item>
+        <item name="themeContrastText">@color/dippedConeContrast</item>
+    </style>
+
+
+    <style name="HotFudgeSundaeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/hotFudgeSundaeMain</item>
+        <item name="themeColorMenuBar">@color/hotFudgeSundaeMenu</item>
+        <item name="themeButtonSolid">@color/hotFudgeSundaeSecond</item>
+        <item name="themeButtonStroke">@color/hotFudgeSundaeThird</item>
+        <item name="themeTextColorPrimary">@color/hotFudgeSundaeFourth</item>
+        <item name="themeContrastText">@color/hotFudgeSundaeContrast</item>
+    </style>
+
+    <style name="BostonCreamPieTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/bostonCreamPieMain</item>
+        <item name="themeColorMenuBar">@color/bostonCreamPieMenu</item>
+        <item name="themeButtonSolid">@color/bostonCreamPieSecond</item>
+        <item name="themeButtonStroke">@color/bostonCreamPieThird</item>
+        <item name="themeTextColorPrimary">@color/bostonCreamPieFourth</item>
+        <item name="themeContrastText">@color/bostonCreamPieContrast</item>
+    </style>
+
+    <style name="BlackForestCakeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/blackForestCakeMain</item>
+        <item name="themeColorMenuBar">@color/blackForestCakeMenu</item>
+        <item name="themeButtonSolid">@color/blackForestCakeSecond</item>
+        <item name="themeButtonStroke">@color/blackForestCakeThird</item>
+        <item name="themeTextColorPrimary">@color/blackForestCakeFourth</item>
+        <item name="themeContrastText">@color/blackForestCakeContrast</item>
+    </style>
+
+    <style name="TiramisuTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/tiramisuMain</item>
+        <item name="themeColorMenuBar">@color/tiramisuMenu</item>
+        <item name="themeButtonSolid">@color/tiramisuSecond</item>
+        <item name="themeButtonStroke">@color/tiramisuThird</item>
+        <item name="themeTextColorPrimary">@color/tiramisuFourth</item>
+        <item name="themeContrastText">@color/tiramisuContrast</item>
+    </style>
+
+    <style name="CherriesJubileeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/cherriesJubileeMain</item>
+        <item name="themeColorMenuBar">@color/cherriesJubileeMenu</item>
+        <item name="themeButtonSolid">@color/cherriesJubileeSecond</item>
+        <item name="themeButtonStroke">@color/cherriesJubileeThird</item>
+        <item name="themeTextColorPrimary">@color/cherriesJubileeFourth</item>
+        <item name="themeContrastText">@color/cherriesJubileeContrast</item>
+    </style>
+
+    <style name="StrawberryShortcakeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/strawberryShortcakeMain</item>
+        <item name="themeColorMenuBar">@color/strawberryShortcakeMenu</item>
+        <item name="themeButtonSolid">@color/strawberryShortcakeSecond</item>
+        <item name="themeButtonStroke">@color/strawberryShortcakeThird</item>
+        <item name="themeTextColorPrimary">@color/strawberryShortcakeFourth</item>
+        <item name="themeContrastText">@color/strawberryShortcakeContrast</item>
+    </style>
+
+    <style name="CarrotCakeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/carrotCakeMain</item>
+        <item name="themeColorMenuBar">@color/carrotCakeMenu</item>
+        <item name="themeButtonSolid">@color/carrotCakeSecond</item>
+        <item name="themeButtonStroke">@color/carrotCakeThird</item>
+        <item name="themeTextColorPrimary">@color/carrotCakeFourth</item>
+        <item name="themeContrastText">@color/carrotCakeContrast</item>
+    </style>
+
+    <style name="PumpkinPieTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/pumpkinPieMain</item>
+        <item name="themeColorMenuBar">@color/pumpkinPieMenu</item>
+        <item name="themeButtonSolid">@color/pumpkinPieSecond</item>
+        <item name="themeButtonStroke">@color/pumpkinPieThird</item>
+        <item name="themeTextColorPrimary">@color/pumpkinPieFourth</item>
+        <item name="themeContrastText">@color/pumpkinPieContrast</item>
+    </style>
+
+    <style name="CreamsicleTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/creamsicleMain</item>
+        <item name="themeColorMenuBar">@color/creamsicleMenu</item>
+        <item name="themeButtonSolid">@color/creamsicleSecond</item>
+        <item name="themeButtonStroke">@color/creamsicleThird</item>
+        <item name="themeTextColorPrimary">@color/creamsicleFourth</item>
+        <item name="themeContrastText">@color/creamsicleContrast</item>
+    </style>
+
+    <style name="LemonMeringuePieTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/lemonMeringuePieMain</item>
+        <item name="themeColorMenuBar">@color/lemonMeringuePieMenu</item>
+        <item name="themeButtonSolid">@color/lemonMeringuePieSecond</item>
+        <item name="themeButtonStroke">@color/lemonMeringuePieThird</item>
+        <item name="themeTextColorPrimary">@color/lemonMeringuePieFourth</item>
+        <item name="themeContrastText">@color/lemonMeringuePieContrast</item>
+    </style>
+
+    <style name="LemonBarTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/lemonBarMain</item>
+        <item name="themeColorMenuBar">@color/lemonBarMenu</item>
+        <item name="themeButtonSolid">@color/lemonBarSecond</item>
+        <item name="themeButtonStroke">@color/lemonBarThird</item>
+        <item name="themeTextColorPrimary">@color/lemonBarFourth</item>
+        <item name="themeContrastText">@color/lemonBarContrast</item>
+    </style>
+
+    <style name="KeyLimePieTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/keyLimePieMain</item>
+        <item name="themeColorMenuBar">@color/keyLimePieMenu</item>
+        <item name="themeButtonSolid">@color/keyLimePieSecond</item>
+        <item name="themeButtonStroke">@color/keyLimePieThird</item>
+        <item name="themeTextColorPrimary">@color/keyLimePieFourth</item>
+        <item name="themeContrastText">@color/keyLimePieContrast</item>
+    </style>
+
+    <style name="MintChipTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/mintChipMain</item>
+        <item name="themeColorMenuBar">@color/mintChipMenu</item>
+        <item name="themeButtonSolid">@color/mintChipSecond</item>
+        <item name="themeButtonStroke">@color/mintChipThird</item>
+        <item name="themeTextColorPrimary">@color/mintChipFourth</item>
+        <item name="themeContrastText">@color/mintChipContrast</item>
+    </style>
+
+    <style name="CandyAppleTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/candyAppleMain</item>
+        <item name="themeColorMenuBar">@color/candyAppleMenu</item>
+        <item name="themeButtonSolid">@color/candyAppleSecond</item>
+        <item name="themeButtonStroke">@color/candyAppleThird</item>
+        <item name="themeTextColorPrimary">@color/candyAppleFourth</item>
+        <item name="themeContrastText">@color/candyAppleContrast</item>
+    </style>
+
+    <style name="KiwiTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/kiwiMain</item>
+        <item name="themeColorMenuBar">@color/kiwiMenu</item>
+        <item name="themeButtonSolid">@color/kiwiSecond</item>
+        <item name="themeButtonStroke">@color/kiwiThird</item>
+        <item name="themeTextColorPrimary">@color/kiwiFourth</item>
+        <item name="themeContrastText">@color/kiwiContrast</item>
+    </style>
+
+    <style name="BombPopTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/bombPopMain</item>
+        <item name="themeColorMenuBar">@color/bombPopMenu</item>
+        <item name="themeButtonSolid">@color/bombPopSecond</item>
+        <item name="themeButtonStroke">@color/bombPopThird</item>
+        <item name="themeTextColorPrimary">@color/bombPopFourth</item>
+        <item name="themeContrastText">@color/bombPopContrast</item>
+    </style>
+
+    <style name="BlueberryParfaitTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/blueberryParfaitMain</item>
+        <item name="themeColorMenuBar">@color/blueberryParfaitMenu</item>
+        <item name="themeButtonSolid">@color/blueberryParfaitSecond</item>
+        <item name="themeButtonStroke">@color/blueberryParfaitThird</item>
+        <item name="themeTextColorPrimary">@color/blueberryParfaitFourth</item>
+        <item name="themeContrastText">@color/blueberryParfaitContrast</item>
+    </style>
+
+    <style name="BerryCobblerTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/berryCobblerMain</item>
+        <item name="themeColorMenuBar">@color/berryCobblerMenu</item>
+        <item name="themeButtonSolid">@color/berryCobblerSecond</item>
+        <item name="themeButtonStroke">@color/berryCobblerThird</item>
+        <item name="themeTextColorPrimary">@color/berryCobblerFourth</item>
+        <item name="themeContrastText">@color/berryCobblerContrast</item>
+    </style>
+
+    <style name="CottonCandyTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/cottonCandyMain</item>
+        <item name="themeColorMenuBar">@color/cottonCandyMenu</item>
+        <item name="themeButtonSolid">@color/cottonCandySecond</item>
+        <item name="themeButtonStroke">@color/cottonCandyThird</item>
+        <item name="themeTextColorPrimary">@color/cottonCandyFourth</item>
+        <item name="themeContrastText">@color/cottonCandyContrast</item>
+    </style>
+
+    <style name="SMoresTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/sMoresMain</item>
+        <item name="themeColorMenuBar">@color/sMoresMenu</item>
+        <item name="themeButtonSolid">@color/sMoresSecond</item>
+        <item name="themeButtonStroke">@color/sMoresThird</item>
+        <item name="themeTextColorPrimary">@color/sMoresFourth</item>
+        <item name="themeContrastText">@color/sMoresContrast</item>
+    </style>
+
+    <style name="CherryCheesecakeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/cherryCheesecakeMain</item>
+        <item name="themeColorMenuBar">@color/cherryCheesecakeMenu</item>
+        <item name="themeButtonSolid">@color/cherryCheesecakeSecond</item>
+        <item name="themeButtonStroke">@color/cherryCheesecakeThird</item>
+        <item name="themeTextColorPrimary">@color/cherryCheesecakeFourth</item>
+        <item name="themeContrastText">@color/cherryCheesecakeContrast</item>
+    </style>
+
+    <style name="BirthdayCakeTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/birthdayCakeMain</item>
+        <item name="themeColorMenuBar">@color/birthdayCakeMenu</item>
+        <item name="themeButtonSolid">@color/birthdayCakeSecond</item>
+        <item name="themeButtonStroke">@color/birthdayCakeThird</item>
+        <item name="themeTextColorPrimary">@color/birthdayCakeFourth</item>
+        <item name="themeContrastText">@color/birthdayCakeContrast</item>
+    </style>
+
+    <style name="CookiesNCreamTheme" parent="AppTheme.NoActionBar">
+        <item name="themeColorPrimary">@color/cookiesNCreamMain</item>
+        <item name="themeColorMenuBar">@color/cookiesNCreamMenu</item>
+        <item name="themeButtonSolid">@color/cookiesNCreamSecond</item>
+        <item name="themeButtonStroke">@color/cookiesNCreamThird</item>
+        <item name="themeTextColorPrimary">@color/cookiesNCreamFourth</item>
+        <item name="themeContrastText">@color/cookiesNCreamContrast</item>
+    </style>
+
+    <style name="ToolBarTheme" parent="AppTheme.NoActionBar">
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

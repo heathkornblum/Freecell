@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_font_size">20sp</dimen>
+    <dimen name="card_width">80dp</dimen>
+    <dimen name="card_height">112dp</dimen>
+    <dimen name="topMarginConst">34dp</dimen>
+    <dimen name="card_corner_radius">6dp</dimen>
+
+    <dimen name="reset_and_menu_midmargin">42dp</dimen>
+    <dimen name="main_menu_button_width">334dp</dimen>
+    <dimen name="victory_button_height">200dp</dimen>
+    <dimen name="victory_button_width">400dp</dimen>
+    <dimen name="victory_button_font_size">70sp</dimen>
+
+    <dimen name="menu_reset_button_font">30sp</dimen>
+
+    <dimen name="buttonRadius">42dp</dimen>
+    <dimen name="button_height">80dp</dimen>
+    <dimen name="arrow_font_size">50sp</dimen>
+    <dimen name="buttonStroke">7dp</dimen>
+    <dimen name="menu_height">100dp</dimen>
+
+    <dimen name="preview_card_height">280dp</dimen>
+    <dimen name="preview_card_width">200dp</dimen>
+    <dimen name="small_font">25sp</dimen>
+
+    <dimen name="logo_font">55sp</dimen>
+    <dimen name="sublogo_font">25sp</dimen>
+</resources>

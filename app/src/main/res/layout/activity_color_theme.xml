@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollViewColorTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/colorThemeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?themeColorPrimary"
+        tools:context=".activities.ColorThemeActivity">
+
+        <Button
+            android:id="@+id/dippedConeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/dippedConeThemeButton"
+            android:theme="@style/DippedConeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/hotFudgeSundaeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Button
+            android:id="@+id/hotFudgeSundaeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/hotFudgeSundaeThemeButton"
+            android:theme="@style/HotFudgeSundaeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/bostonCreamPieButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dippedConeButton" />
+
+        <Button
+            android:id="@+id/bostonCreamPieButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/bostonCreamPieThemeButton"
+            android:theme="@style/BostonCreamPieTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/blackForestCakeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotFudgeSundaeButton" />
+
+        <Button
+            android:id="@+id/blackForestCakeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/blackForestCakeThemeButton"
+            android:theme="@style/BlackForestCakeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/tiramisuButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bostonCreamPieButton" />
+
+        <Button
+            android:id="@+id/tiramisuButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/tiramisuThemeButton"
+            android:theme="@style/TiramisuTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/cherriesJubileeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blackForestCakeButton" />
+
+        <Button
+            android:id="@+id/cherriesJubileeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/cherriesJubileeThemeButton"
+            android:theme="@style/CherriesJubileeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/strawberryShortcakeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tiramisuButton" />
+
+        <Button
+            android:id="@+id/strawberryShortcakeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/strawberryShortcakeThemeButton"
+            android:theme="@style/StrawberryShortcakeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/carrotCakeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cherriesJubileeButton" />
+
+        <Button
+            android:id="@+id/carrotCakeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/carrotCakeThemeButton"
+            android:theme="@style/CarrotCakeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/pumpkinPieButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/strawberryShortcakeButton" />
+
+        <Button
+            android:id="@+id/pumpkinPieButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/pumpkinPieThemeButton"
+            android:theme="@style/PumpkinPieTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/creamsicleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carrotCakeButton" />
+
+        <Button
+            android:id="@+id/creamsicleButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/creamsicleThemeButton"
+            android:theme="@style/CreamsicleTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/lemonMeringuePieButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pumpkinPieButton" />
+
+        <Button
+            android:id="@+id/lemonMeringuePieButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/lemonMeringuePieThemeButton"
+            android:theme="@style/LemonMeringuePieTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/lemonBarButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/creamsicleButton" />
+
+        <Button
+            android:id="@+id/lemonBarButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/lemonBarThemeButton"
+            android:theme="@style/LemonBarTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/keyLimePieButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemonMeringuePieButton" />
+
+        <Button
+            android:id="@+id/keyLimePieButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/keyLimePieThemeButton"
+            android:theme="@style/KeyLimePieTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/mintChipButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemonBarButton" />
+
+        <Button
+            android:id="@+id/mintChipButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/mintChipThemeButton"
+            android:theme="@style/MintChipTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/candyAppleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/keyLimePieButton" />
+
+        <Button
+            android:id="@+id/candyAppleButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/candyAppleThemeButton"
+            android:theme="@style/CandyAppleTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/kiwiButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mintChipButton" />
+
+        <Button
+            android:id="@+id/kiwiButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/kiwiThemeButton"
+            android:theme="@style/KiwiTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/bombPopButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/candyAppleButton" />
+
+        <Button
+            android:id="@+id/bombPopButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/bombPopThemeButton"
+            android:theme="@style/BombPopTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/blueberryParfaitButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kiwiButton" />
+
+        <Button
+            android:id="@+id/blueberryParfaitButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/blueberryParfaitThemeButton"
+            android:theme="@style/BlueberryParfaitTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/berryCobblerButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bombPopButton" />
+
+        <Button
+            android:id="@+id/berryCobblerButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/berryCobblerThemeButton"
+            android:theme="@style/BerryCobblerTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/cottonCandyButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blueberryParfaitButton" />
+
+        <Button
+            android:id="@+id/cottonCandyButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/cottonCandyThemeButton"
+            android:theme="@style/CottonCandyTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/sMoresButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/berryCobblerButton" />
+
+        <Button
+            android:id="@+id/sMoresButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/sMoresThemeButton"
+            android:theme="@style/SMoresTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/cherryCheesecakeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cottonCandyButton" />
+
+        <Button
+            android:id="@+id/cherryCheesecakeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/cherryCheesecakeThemeButton"
+            android:theme="@style/CherryCheesecakeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/birthdayCakeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sMoresButton" />
+
+        <Button
+            android:id="@+id/birthdayCakeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/birthdayCakeThemeButton"
+            android:theme="@style/BirthdayCakeTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/cookiesNCreamButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cherryCheesecakeButton" />
+
+        <Button
+            android:id="@+id/cookiesNCreamButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/cookiesNCreamButton"
+            android:theme="@style/CookiesNCreamTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/licoriceButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdayCakeButton" />
+
+        <Button
+            android:id="@+id/licoriceButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_button_picker_layerlist"
+            android:fontFamily="monospace"
+            android:text="@string/licoriceThemeButton"
+            android:theme="@style/LicoriceTheme"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cookiesNCreamButton" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/aboutToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?themeColorMenuBar"
+                android:theme="?attr/actionBarTheme"
+                app:popupTheme="@style/PopupOverlay"
+                app:titleTextColor="?themeTextColorPrimary" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

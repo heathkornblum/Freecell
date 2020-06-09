@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+attr.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<resources>
+    <attr name="themeColorPrimary" format="reference" />
+    <attr name="themeTextColorPrimary" format="reference" />
+    <attr name="themeColorMenuBar" format="reference" />
+    <attr name="themeButtonSolid" format="reference" />
+    <attr name="themeButtonStroke" format="reference" />
+    <attr name="themeContrastText" format="reference" />
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+theme_button.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/buttonRadius" />
+    <stroke
+        android:color="?themeButtonStroke"
+        android:width="@dimen/buttonStroke"
+        >
+
+    </stroke>
+
+
+    <solid
+        android:color="?themeButtonSolid"
+        ></solid>
+</shape>

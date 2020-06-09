@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+button_background_for_theme_picker.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid
+        android:color="?themeColorPrimary"
+        ></solid>
+</shape>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+splash_screen.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/black" />
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/title_on_black" />
+    </item>
+</layer-list>

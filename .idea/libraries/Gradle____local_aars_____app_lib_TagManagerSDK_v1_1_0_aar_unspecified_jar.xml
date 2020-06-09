@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:./app/lib/TagManagerSDK-v1.1.0.aar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f19478d1136139022f115da3bd2f305/jetified-TagManagerSDK-v1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f19478d1136139022f115da3bd2f305/jetified-TagManagerSDK-v1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f19478d1136139022f115da3bd2f305/jetified-TagManagerSDK-v1.1.0/jars/libs/robospice-1.4.9.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f19478d1136139022f115da3bd2f305/jetified-TagManagerSDK-v1.1.0/jars/libs/commons-lang3-3.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f19478d1136139022f115da3bd2f305/jetified-TagManagerSDK-v1.1.0/jars/libs/commons-io-2.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f19478d1136139022f115da3bd2f305/jetified-TagManagerSDK-v1.1.0/jars/libs/robospice-cache-1.4.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,145 @@
+<!--
+emptycell.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<resources>
+    <string name="app_name">Free Cell</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_title_animation_speed">Animation Speed</string>
+    <string name="pref_title_hinting_highlights">Hinting Highlights</string>
+    <string name="pref_title_autoplay">Autoplay</string>
+    <string name="button_back_to_menu">Back To Menu</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_new_game">New Game</string>
+    <string name="button_continue">Continue</string>
+    <string name="title_activity_about">About Free Cell</string>
+    <string name="button_about">About</string>
+    <string name="about_game_text">
+        <b>How to Play Free Cell</b>
+        \n\n
+        Free Cell is a variant of solitaire.  It is played on a board with three areas: the areas are
+        four Free Cells, eight Tableau Columns, and four Foundations.  In portrait orientation the Free Cells are at the top of the
+        screen in the left half, the Foundations are at the top in the right half, and the Tableau Columns
+        are below the Free Cells and Foundations.
+        In landscape orientation the Free Cells are along the left edge of the screen,
+        the Foundations are along the right edge, and the Tableau Columnns are in the middle.
+        \n\n
+        At the start of the game, the entire 52 card deck is dealt face up into the Tableau Columns.
+        The goal is to move all the cards into the Foundations.
+        \n\n
+        Cards must be placed into Foundations in rank order (from
+        Ace to King).  Only one suit can be played on an individual Foundation; for example, once the
+        Ace of Hearts is played on one of the Foundations the Two of Hearts must be the next card played
+        on that Foundation, and so on.
+        \n\n
+        A Free Cell is free to hold any card, but can only hold one at a time.
+        \n\n
+        A card can be added to a Tableau Column only if it is the opposite color (red or black) and one
+        rank lower (a two on a three, a three on a four, etc.) than the card
+        already at the bottom of the Tableau Column.  Any card can be placed on an empty Tableau Column.
+        \n\n
+        Cards can be moved freely (one at a time) between Tableau Columns and Free Cells, but once a card is
+        placed on a Foundation it cannot be moved again.
+        \n\n
+
+        <b>
+        About Free Cell by Conversant
+        </b>
+        \n\n
+        We have done a number of things to make the playing of Free Cell more enjoyable than
+        sitting down with a deck of cards.
+        \n\n
+        While the rules of Free Cell state that cards must be moved only one at a time, we allow
+        the moving of a grouped sub-pile when the open spaces on the board would allow for that
+        group to move to the new location through a series of single card moves.  The sub-pile
+        must be a group that by itself follows the rules of descending ranks of alternating colors.
+        \n\n
+        There is an autoplay feature (turned on by default), that will move cards to the Foundations
+        when it is certain that you no longer need that card to complete the game.  Autoplay moves cards at a speed
+        that can be changed via the Settings screen.  You can not make moves of your own while
+        an autoplay move is being made.
+        \n\n
+        When you pick up a card or a sub-pile the places where you can \'drop\' it are highlighted.
+        Because heavy highlighting can be distracting to some players and too light of highlighting
+        can be unnoticed by some, the strength of the highlighting can be set via a slider on the
+        Settings screen.  Slide this down to the minimum to turn off highlighting entirely.
+        \n\n
+        <b>
+        The Main Menu
+        </b>
+        \n\n
+        <u>Continue</u>
+        \n\n
+        This selection only appears if you have a game that is begun but not yet completed.
+        Select it to resume play.
+        \n\n
+        <u>New Game</u>
+        \n\n
+        This selection lets you start a new game.  If there is a game already in progress it
+        will be abandoned.
+        \n\n
+        <u>Settings</u>
+        \n\n
+        The Settings screen lets you adjust a few things about playing Free Cell.
+        You can turn Autoplay on or off.
+        You can adjust the animation speed
+        of the autoplay moves.  You can adjust the strength of the highlights which provide
+        hints to speed up your playing.  And you can choose from a small selection of background
+        colors.
+        \n\n
+        <u>Scoring</u>
+        \n\n
+        Lower scores are better.  For every move you make to a Tableau Column or a Free Cell, you will
+        gain 2 points.  Autoplay moves accrue 0 points, as do any moves to a Foundation Cell.  Back moves
+        are worth 1 point.  Forward moves are worth 0 points.
+        \n\n
+        <b>
+        Credits
+        </b>
+        \n\n
+        Main programming: Heath Kornblum.
+        \n\n
+        Additional testing by Mat Cooper.
+        \n\n
+        Feedback by Fang Van Lydegraf, Paul Thomas and Kelly Harrel.
+        \n\n
+        Enjoy the game!
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_about">About Free Cell</string>
+    <string name="score">Score: %1$d</string>
+    <string name="logo">Freecell</string>
+    <string name="sub_logo">By Conversant</string>
+    <string name="title_activity_color_theme">Set Color Theme</string>
+    <string name="dippedConeThemeButton">Dipped Cone</string>
+    <string name="hotFudgeSundaeThemeButton">Hot Fudge Sundae</string>
+    <string name="bostonCreamPieThemeButton">Boston Cream Pie</string>
+    <string name="blackForestCakeThemeButton">Black Forest Cake</string>
+    <string name="tiramisuThemeButton">Tiramisu</string>
+    <string name="cherriesJubileeThemeButton">Cherries Jubilee</string>
+    <string name="strawberryShortcakeThemeButton">Strawberry Shortcake</string>
+    <string name="carrotCakeThemeButton">Carrot Cake</string>
+    <string name="pumpkinPieThemeButton">Pumpkin Pie</string>
+    <string name="creamsicleThemeButton">Creamsicle</string>
+    <string name="lemonMeringuePieThemeButton">Lemon Meringue Pie</string>
+    <string name="lemonBarThemeButton">Lemon Bar</string>
+    <string name="keyLimePieThemeButton">Key Lime Pie</string>
+    <string name="mintChipThemeButton">Mint Chip</string>
+    <string name="candyAppleThemeButton">Candy Apple</string>
+    <string name="kiwiThemeButton">Kiwi</string>
+    <string name="bombPopThemeButton">Bomb Pop</string>
+    <string name="blueberryParfaitThemeButton">Blueberry Parfait</string>
+    <string name="berryCobblerThemeButton">Berry Cobbler</string>
+    <string name="cottonCandyThemeButton">Cotton Candy</string>
+    <string name="sMoresThemeButton">S\'Mores</string>
+    <string name="cherryCheesecakeThemeButton">Cherry Cheesecake</string>
+    <string name="birthdayCakeThemeButton">Birthday Cake</string>
+    <string name="cookiesNCreamButton">Cookies \'N Cream</string>
+    <string name="licoriceThemeButton">Licorice</string>
+    <string name="checkMark">\u2713</string>
+</resources>

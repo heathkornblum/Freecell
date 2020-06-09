@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+emptycell.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:radius="@dimen/card_corner_radius"
+        />
+    <solid
+        android:color="@color/tableGreen"
+        />
+    <stroke android:width="1dp"
+        android:color="@color/emptyCellStroke"
+        />
+    <size
+        android:height="@dimen/card_height"
+        android:width="@dimen/card_width"
+        />
+</shape>

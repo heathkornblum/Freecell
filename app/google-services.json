@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "348604620456",
+    "firebase_url": "https://cv-freecell-android.firebaseio.com",
+    "project_id": "cv-freecell-android",
+    "storage_bucket": "cv-freecell-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348604620456:android:de4c69ca8abebe2d",
+        "android_client_info": {
+          "package_name": "com.conversantmedia.freecell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348604620456-rmpu73ffrr0kfnr2okuu8f335g87636t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.conversantmedia.freecell",
+            "certificate_hash": "1e39b794aa8e7711dc66323ffbf4b184699b53ce"
+          }
+        },
+        {
+          "client_id": "348604620456-ci9s065sup3bnojfm130rbddacrj3sut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtkLLFc9cHY5oMfgjjGOzG8otur5q8vaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348604620456-ci9s065sup3bnojfm130rbddacrj3sut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="?themeColorPrimary"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".activities.MainActivity">
+
+
+    <TextView
+        android:id="@+id/subLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/sub_logo"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="?themeContrastText"
+        android:textSize="@dimen/sublogo_font"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?themeContrastText"
+        android:textSize="@dimen/logo_font"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="@+id/tableauColumn8"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="monospace"
+        android:text="@string/score"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="?themeContrastText"
+        android:textSize="@dimen/small_font"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/shadowHolder"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_margin="0dp"
+        android:clipChildren="false"
+        android:padding="0dp"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/victory"
+        android:layout_width="@dimen/victory_button_width"
+        android:layout_height="@dimen/victory_button_height"
+        android:background="@drawable/theme_button"
+        android:fontFamily="monospace"
+        android:text="You Win!"
+        android:textAlignment="center"
+        android:textColor="?themeTextColorPrimary"
+        android:textSize="@dimen/victory_button_font_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tableauColumn1"
+        app:layout_constraintEnd_toStartOf="@+id/tableauColumn8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tableauColumn1"
+        app:layout_constraintTop_toBottomOf="@+id/tableauColumn1" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell8"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell7"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn8" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell7"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell6"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn7" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell6"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell5"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn6" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell5"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell4"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn5" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell4"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell3"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn4" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell3"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell2"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn3" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell1"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn2" />
+
+    <com.conversantmedia.freecell.card.EmptyCell
+        android:id="@+id/emptyCell1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableauColumn1" />
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell3"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn3"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell4"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn4"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell5"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn5"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell6"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn6"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell7"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell5"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn7"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/emptyCell8"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell6"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.TableauColumn
+        android:id="@+id/tableauColumn8"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/emptyCell7"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.conversantmedia.freecell.cardViewHolders.TableauColumn>
+
+    <com.conversantmedia.freecell.cardViewHolders.FoundationCell
+        android:id="@+id/foundationCell4"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/foundationCell3"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.conversantmedia.freecell.cardViewHolders.FoundationCell>
+
+    <com.conversantmedia.freecell.cardViewHolders.FoundationCell
+        android:id="@+id/foundationCell1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/foundationCell2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/freecell4"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.conversantmedia.freecell.cardViewHolders.FoundationCell>
+
+    <com.conversantmedia.freecell.cardViewHolders.FoundationCell
+        android:id="@+id/foundationCell2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/foundationCell3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/foundationCell1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.conversantmedia.freecell.cardViewHolders.FoundationCell>
+
+    <com.conversantmedia.freecell.cardViewHolders.FoundationCell
+        android:id="@+id/foundationCell3"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/foundationCell4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/foundationCell2"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.conversantmedia.freecell.cardViewHolders.FoundationCell>
+
+    <com.conversantmedia.freecell.cardViewHolders.FreeCell
+        android:id="@+id/freecell2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/freecell3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/freecell1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.conversantmedia.freecell.cardViewHolders.FreeCell
+        android:id="@+id/freecell1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/freecell2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.conversantmedia.freecell.cardViewHolders.FreeCell
+        android:id="@+id/freecell3"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/freecell4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/freecell2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.conversantmedia.freecell.cardViewHolders.FreeCell
+        android:id="@+id/freecell4"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/foundationCell1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/freecell3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="257dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".875" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <View
+        android:id="@+id/toolBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/menu_height"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_menu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/main_menu_button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/theme_button"
+        android:fontFamily="monospace"
+        android:paddingLeft="@dimen/buttonRadius"
+        android:text="MENU"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="@dimen/menu_reset_button_font"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toolBar"
+        app:layout_constraintTop_toTopOf="@+id/toolBar" />
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/theme_button"
+        android:gravity="top"
+        android:textAlignment="center"
+        android:textSize="@dimen/arrow_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/toolBar" />
+
+    <Button
+        android:id="@+id/resetButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/main_menu_button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/theme_button"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/buttonRadius"
+        android:text="RESET"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="@dimen/menu_reset_button_font"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolBar" />
+
+    <Button
+        android:id="@+id/forwardButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/theme_button"
+        android:gravity="top"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/arrow_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/toolBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

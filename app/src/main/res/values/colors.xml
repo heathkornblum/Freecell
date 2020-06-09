@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+colors.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lightGrey">#D6D6D6</color>
+    <color name="red">#d12d36</color>
+    <!--<color name="darkRed">#c01c25</color>-->
+    <color name="statusBar">#3D4C42</color>
+    <color name="greenLight">#55FF55</color>
+    <color name="greenLightFreecell">#009900</color>
+    <color name="greenLightTarget">#BBFFBB</color>
+    <color name="redLight">#FF0000</color>
+    <color name="blueLight">#5555FF</color>
+    <color name="emptyCellStroke">#AAAAAA</color>
+    <color name="buttonSolid">#2B2B2B</color>
+
+    <color name="horizontalBar">#00A835</color>
+    <color name="brightGreenBar">#00A835</color>
+    <color name="tableGreen">#076324</color>
+    <color name="lightGreenText">#BBFFBB</color>
+    <color name="darkGrey">#2B2B2B</color>
+    <color name="lightGreenLine">#99FFB9</color>
+
+
+    <!-- Dipped Cone -->
+    <color name="dippedConeMain">#492c2b</color>
+    <color name="dippedConeSecond">#d7ae7b</color>
+    <color name="dippedConeThird">#a47f4e</color>
+    <color name="dippedConeFourth">#000000</color>
+    <color name="dippedConeContrast">#ffffff</color>
+    <color name="dippedConeMenu">#ffe0ab</color>
+
+    <!-- Hot Fudge Sundae -->
+    <color name="hotFudgeSundaeMain">#251110</color>
+    <color name="hotFudgeSundaeSecond">#ffe4c3</color>
+    <color name="hotFudgeSundaeThird">#bb0030</color>
+    <color name="hotFudgeSundaeFourth">#000000</color>
+    <color name="hotFudgeSundaeContrast">#ffffff</color>
+    <color name="hotFudgeSundaeMenu">#fffff6</color>
+
+
+
+    <!-- Boston Cream Pie -->
+    <color name="bostonCreamPieMain">#4b3025</color>
+    <color name="bostonCreamPieSecond">#f2e5ae</color>
+    <color name="bostonCreamPieThird">#bfb37e</color>
+    <color name="bostonCreamPieFourth">#000000</color>
+    <color name="bostonCreamPieContrast">#ffffff</color>
+    <color name="bostonCreamPieMenu">#78594d</color>
+
+
+
+    <!-- Black Forest Cake -->
+    <color name="blackForestCakeMain">#4b100f</color>
+    <color name="blackForestCakeSecond">#b74b4f</color>
+    <color name="blackForestCakeThird">#2b0000</color>
+    <color name="blackForestCakeFourth">#ffffff</color>
+    <color name="blackForestCakeContrast">#ffffff</color>
+    <color name="blackForestCakeMenu">#7b3a35</color>
+
+
+    <!-- Tiramisu -->
+    <color name="tiramisuMain">#6e382d</color>
+    <color name="tiramisuSecond">#e9dbc0</color>
+    <color name="tiramisuThird">#b7a990</color>
+    <color name="tiramisuFourth">#000000</color>
+    <color name="tiramisuContrast">#ffffff</color>
+    <color name="tiramisuMenu">#fffff3</color>
+
+
+    <!-- Cherries Jubilee -->
+    <color name="cherriesJubileeMain">#96000e</color>
+    <color name="cherriesJubileeSecond">#d4cbb0</color>
+    <color name="cherriesJubileeThird">#620000</color>
+    <color name="cherriesJubileeFourth">#000000</color>
+    <color name="cherriesJubileeContrast">#ffffff</color>
+    <color name="cherriesJubileeMenu">#fffee2</color>
+
+
+    <!-- Strawberry Shortcake -->
+    <color name="strawberryShortcakeMain">#ae0116</color>
+    <color name="strawberryShortcakeSecond">#ffffcf</color>
+    <color name="strawberryShortcakeThird">#770000</color>
+    <color name="strawberryShortcakeFourth">#000000</color>
+    <color name="strawberryShortcakeContrast">#ffffff</color>
+    <color name="strawberryShortcakeMenu">#757e3d</color>
+
+
+    <!-- Carrot Cake -->
+    <color name="carrotCakeMain">#bb5824</color>
+    <color name="carrotCakeSecond">#eff6f6</color>
+    <color name="carrotCakeThird">#852b00</color>
+    <color name="carrotCakeFourth">#000000</color>
+    <color name="carrotCakeContrast">#ffffff</color>
+    <color name="carrotCakeMenu">#f28750</color>
+
+    <!-- Pumpkin Pie -->
+    <color name="pumpkinPieMain">#ea9129</color>
+    <color name="pumpkinPieSecond">#e9af7c</color>
+    <color name="pumpkinPieThird">#b5804f</color>
+    <color name="pumpkinPieFourth">#000000</color>
+    <color name="pumpkinPieContrast">#000000</color>
+    <color name="pumpkinPieMenu">#ffc25a</color>
+
+
+    <!-- Creamsicle -->
+    <color name="creamsicleMain">#fda046</color>
+    <color name="creamsicleSecond">#fff8e5</color>
+    <color name="creamsicleThird">#ffd175</color>
+    <color name="creamsicleFourth">#000000</color>
+    <color name="creamsicleContrast">#000000</color>
+    <color name="creamsicleMenu">#c57113</color>
+
+
+    <!-- Lemon Meringue Pie -->
+    <color name="lemonMeringuePieMain">#ffff73</color>
+    <color name="lemonMeringuePieSecond">#ffffff</color>
+    <color name="lemonMeringuePieThird">#f6d23f</color>
+    <color name="lemonMeringuePieFourth">#000000</color>
+    <color name="lemonMeringuePieContrast">#000000</color>
+    <color name="lemonMeringuePieMenu">#996e30</color>
+
+
+    <!-- Lemon Bar -->
+    <color name="lemonBarMain">#ffff72</color>
+    <color name="lemonBarSecond">#d1a673</color>
+    <color name="lemonBarThird">#f6d23f</color>
+    <color name="lemonBarFourth">#000000</color>
+    <color name="lemonBarContrast">#000000</color>
+    <color name="lemonBarMenu">#bea000</color>
+
+
+    <!-- Key Lime Pie -->
+    <color name="keyLimePieMain">#fdec99</color>
+    <color name="keyLimePieSecond">#eec165</color>
+    <color name="keyLimePieThird">#ffffff</color>
+    <color name="keyLimePieFourth">#000000</color>
+    <color name="keyLimePieContrast">#000000</color>
+    <color name="keyLimePieMenu">#fff495</color>
+
+
+    <!-- Mint Chip -->
+    <color name="mintChipMain">#f3efe5</color>
+    <color name="mintChipSecond">#99c82d</color>
+    <color name="mintChipThird">#000000</color>
+    <color name="mintChipFourth">#000000</color>
+    <color name="mintChipContrast">#000000</color>
+    <color name="mintChipMenu">#ffffff</color>
+
+
+    <!-- Candy Apple -->
+    <color name="candyAppleMain">#850000</color>
+    <color name="candyAppleSecond">#90c22c</color>
+    <color name="candyAppleThird">#bd0012</color>
+    <color name="candyAppleFourth">#000000</color>
+    <color name="candyAppleContrast">#ffffff</color>
+    <color name="candyAppleMenu">#5e9100</color>
+
+
+    <!-- Kiwi -->
+    <color name="kiwiMain">#c9cb42</color>
+    <color name="kiwiSecond">#a0762e</color>
+    <color name="kiwiThird">#6e4b00</color>
+    <color name="kiwiFourth">#000000</color>
+    <color name="kiwiContrast">#000000</color>
+    <color name="kiwiMenu">#e0e2bc</color>
+
+
+    <!-- Bomb Pop -->
+    <color name="bombPopMain">#0093c6</color>
+    <color name="bombPopSecond">#ea3136</color>
+    <color name="bombPopThird">#f7d381</color>
+    <color name="bombPopFourth">#ffffff</color>
+    <color name="bombPopContrast">#ffffff</color>
+    <color name="bombPopMenu">#5bc3f9</color>
+
+
+    <!-- Blueberry Parfait -->
+    <color name="blueberryParfaitMain">#2d3c63</color>
+    <color name="blueberryParfaitSecond">#d8c287</color>
+    <color name="blueberryParfaitThird">#001738</color>
+    <color name="blueberryParfaitFourth">#000000</color>
+    <color name="blueberryParfaitContrast">#ffffff</color>
+    <color name="blueberryParfaitMenu">#5a6691</color>
+
+
+    <!-- Berry Cobbler -->
+    <color name="berryCobblerMain">#352425</color>
+    <color name="berryCobblerSecond">#e5a848</color>
+    <color name="berryCobblerThird">#5f4c4d</color>
+    <color name="berryCobblerFourth">#000000</color>
+    <color name="berryCobblerContrast">#ffffff</color>
+    <color name="berryCobblerMenu">#ffd977</color>
+
+
+    <!-- Cotton Candy -->
+    <color name="cottonCandyMain">#F2B7BD</color>
+    <color name="cottonCandySecond">#CFB6DB</color>
+    <color name="cottonCandyThird">#8BDFE0</color>
+    <color name="cottonCandyFourth">#FAFBFF</color>
+    <color name="cottonCandyContrast">#000000</color>
+    <color name="cottonCandyMenu">#bf878d</color>
+
+
+    <!-- S'Mores -->
+    <color name="sMoresMain">#dfad7a</color>
+    <color name="sMoresSecond">#ffffff</color>
+    <color name="sMoresThird">#56382c</color>
+    <color name="sMoresFourth">#000000</color>
+    <color name="sMoresContrast">#000000</color>
+    <color name="sMoresMenu">#b59082</color>
+
+
+    <!-- Cherry Cheesecake -->
+    <color name="cherryCheesecakeMain">#ece8de</color>
+    <color name="cherryCheesecakeSecond">#ff001e</color>
+    <color name="cherryCheesecakeThird">#cca47b</color>
+    <color name="cherryCheesecakeFourth">#ffffff</color>
+    <color name="cherryCheesecakeContrast">#000000</color>
+    <color name="cherryCheesecakeMenu">#ff5a49</color>
+
+    <!-- Birthday Cake -->
+    <color name="birthdayCakeMain">#e3e2e0</color>
+    <color name="birthdayCakeSecond">#7e4e92</color>
+    <color name="birthdayCakeThird">#a21422</color>
+    <color name="birthdayCakeFourth">#ffffff</color>
+    <color name="birthdayCakeContrast">#000000</color>
+    <color name="birthdayCakeMenu">#ae7bc3</color>
+
+
+    <!-- Cookies'n'Cream -->
+    <color name="cookiesNCreamMain">#FAFBFF</color>
+    <color name="cookiesNCreamSecond">#EBF2FB</color>
+    <color name="cookiesNCreamThird">#23232E</color>
+    <color name="cookiesNCreamFourth">#1F1D2E</color>
+    <color name="cookiesNCreamContrast">#1F1D2E</color>
+    <color name="cookiesNCreamMenu">#c7c8cc</color>
+
+
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+theme_button_picker_layerlist.xml
+Freecell, By Conversant
+Created By <a href="heathkornblum@gmail.com>Heath Kornblum</a>, Conversant, Inc.
+Last Updated April 22, 2019
+Copyright 2019 Conversant, Inc.
+-->
+<layer-list    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:height="@dimen/menu_height" android:gravity="center">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="?themeColorPrimary"
+                ></solid>
+        </shape>
+    </item>
+    <item android:height="@dimen/button_height" android:gravity="center" android:left="@dimen/card_width" android:right="@dimen/card_width">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/buttonRadius" />
+            <stroke
+                android:color="?themeButtonStroke"
+                android:width="@dimen/buttonStroke"
+                >
+
+            </stroke>
+
+
+            <solid
+                android:color="?themeButtonSolid"
+                ></solid>
+        </shape>
+    </item>
+
+</layer-list>
